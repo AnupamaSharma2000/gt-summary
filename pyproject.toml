@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gt-summary"
+version = "0.1.0"
+description = "One-call styled summary statistics tables for pandas DataFrames using Great Tables"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Anupama Sharma", email = "sharma25@umd.edu" }
+]
+keywords = ["great-tables", "pandas", "summary", "statistics", "data"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "great_tables>=0.5",
+    "pandas>=1.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/AnupamaSharma2000/gt-summary"
+"Bug Tracker" = "https://github.com/AnupamaSharma2000/gt-summary/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gt_summary"]
